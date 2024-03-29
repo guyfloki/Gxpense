@@ -1,0 +1,53 @@
+enum ExpenseCategory {
+  FOOD,
+  TRANSPORTATION,
+  ENTERTAINMENT,
+  HEALTH,
+  SHOPPING,
+  BILLS,
+  RENT,
+  EDUCATION,
+  TRAVEL,
+  INSURANCE,
+  UTILITIES,
+  OTHERS
+}
+
+enum IncomeCategory {
+  SALARY,
+  BUSINESS,
+  INVESTITIONS,
+  SIDE_HUSTLE,
+  FREELANCE,
+  PENSION,
+  RENTAL_INCOME,
+  DIVIDENDS,
+  GIFTS,
+  LOANS,
+  SAVINGS_INTEREST,
+  OTHERS
+}
+
+
+type Expense @model @auth(rules: [{allow: owner}, {allow: groups, groups: ["us-east-1_Eic9TeHEn_Google"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  owner: String
+  amount: Float!
+  category: ExpenseCategory!
+  notes: String
+  createdAt: String!
+}
+
+type Income @model @auth(rules: [{allow: owner}, {allow: groups, groups: ["us-east-1_Eic9TeHEn_Google"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  owner: String
+  amount: Float!
+  category: IncomeCategory!
+  notes: String
+  createdAt: String!
+}
+
+type User @model @auth(rules: [{allow: owner, ownerField: "id"}, {allow: groups, groups: ["us-east-1_Eic9TeHEn_Google"], operations: [read, create, update, delete]}]) {
+  id: String
+  amount: Float!
+}

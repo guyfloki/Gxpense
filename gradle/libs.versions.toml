@@ -1,0 +1,67 @@
+[versions]
+agp = "8.2.0"
+kotlin = "1.8.10"
+core-ktx = "1.9.0"
+appCompat = "1.6.1"
+material = "1.9.0"
+constraintLayout = "2.1.4"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+desugarJdkLibs = "1.1.5"
+amplifyFrameworkCore = "2.6.0"
+amplifyFrameworkAwsApi = "2.6.0"
+amplifyFrameworkAwsDatastore = "2.6.0"
+amplifyFrameworkAwsAuthCognito = "2.6.0"
+composeUi = "1.4.3"
+activity-compose = "1.7.1"
+composeUiTooling = "1.4.3"
+composeMaterial3 = "1.1.0"
+materialIconsExtended = "1.4.3"
+navigationCompose = "2.5.3"
+kotlinxCoroutinesCore = "1.6.3"
+kotlinxCoroutinesAndroid = "1.6.3"
+lifecycle-runtime-ktx = "2.6.1"
+compose-bom = "2023.03.00"
+awsAndroidSdkApigatewayCore = "2.69.0"
+
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+appCompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appCompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintLayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintLayout" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugarJdkLibs" }
+amplifyFrameworkCore = { group = "com.amplifyframework", name = "core", version.ref = "amplifyFrameworkCore" }
+amplifyFrameworkAwsApi = { group = "com.amplifyframework", name = "aws-api", version.ref = "amplifyFrameworkAwsApi" }
+amplifyFrameworkAwsDatastore = { group = "com.amplifyframework", name = "aws-datastore", version.ref = "amplifyFrameworkAwsDatastore" }
+amplifyFrameworkAwsAuthCognito = { group = "com.amplifyframework", name = "aws-auth-cognito", version.ref = "amplifyFrameworkAwsAuthCognito" }
+composeUi = { group = "androidx.compose.ui", name = "ui", version.ref = "composeUi" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+composeUiTooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "composeUiTooling"}
+composeMaterial3 = { group = "androidx.compose.material3", name = "material3", version.ref = "composeMaterial3" }
+materialIconsExtended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "materialIconsExtended" }
+navigationCompose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+kotlinxCoroutinesCore = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+kotlinxCoroutinesAndroid = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+ui = { group = "androidx.compose.ui", name = "ui", version.ref = "composeUi" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics", version.ref = "composeUi" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "composeUiTooling" }
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "composeUiTooling" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version.ref = "composeUiTooling" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "composeUiTooling" }
+material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "composeMaterial3" }
+awsAndroidSdkApigatewayCore = { group = "com.amazonaws", name = "aws-android-sdk-apigateway-core", version.ref = "awsAndroidSdkApigatewayCore" }
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+[bundles]
+
