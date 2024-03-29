@@ -209,7 +209,8 @@ fun AssistantMessage(message: String) {
             Box(Modifier.background(Color.White)) {
                 Text(
                     text = message,
-                    Modifier.padding(8.dp)
+                    Modifier.padding(8.dp),
+                    color = Color.Black
                 )
             }
         }
